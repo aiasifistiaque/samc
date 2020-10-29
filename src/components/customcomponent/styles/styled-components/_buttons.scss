@@ -1,0 +1,131 @@
+@mixin button($background: black, $text: white) {
+	border: 1px solid rgba($color: $background, $alpha: 0.8);
+	font-size: 16px;
+	font-weight: 450;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	justify-content: center;
+	text-justify: center;
+	justify-self: center;
+	align-items: center;
+	overflow: hidden;
+	text-align: center;
+	text-transform: capitalize;
+	padding: 11px 22px;
+	background-color: rgba($color: $background, $alpha: 0.8);
+	color: rgba($color: $text, $alpha: 1);
+	transition: 0.3s;
+	margin: 10px 0px;
+
+	&:hover {
+		background-color: rgba($color: $background, $alpha: 1);
+		color: rgba($color: $text, $alpha: 1);
+	}
+}
+
+.btn {
+	@include button(black, white);
+}
+
+.btn-primary {
+	@include button($primary, white);
+}
+
+.btn-secondary {
+	@include button($secondary, white);
+}
+
+.btn-light {
+	@include button(white, black);
+}
+
+.btn-slate {
+	@include button(slateblue, white);
+}
+
+.btn-blue {
+	@include button(dodgerblue, white);
+}
+
+.btn-danger {
+	@include button(crimson, white);
+}
+
+.btn-transparent {
+	@include button(transparent, slateblue);
+	background-color: transparent;
+	border: none;
+
+	&:hover {
+		background-color: rgba($color: gray, $alpha: 0.1);
+	}
+}
+
+.btn-link {
+	@include button(transparent, rgb(9, 114, 211));
+	color: rgba(9, 114, 211, 1);
+	background-color: transparent;
+	border: none;
+
+	&:hover {
+		background-color: transparent;
+		text-decoration-line: underline;
+	}
+}
+
+.btn-large {
+	font-size: 18px;
+	padding: 18px 30px;
+}
+
+.btn-small {
+	font-size: 13px;
+	padding: 8px 15px;
+}
+
+.btn-rounded {
+	border-radius: 6px;
+}
+
+.btn-round {
+	border-radius: 25px;
+}
+
+.btn-outlined {
+	background-color: transparent;
+	color: rgba($color: black, $alpha: 0.8);
+}
+
+.btn-block {
+	width: 100%;
+	box-sizing: border-box;
+	margin: 10px 0px;
+}
+
+.btn-full {
+	width: 100%;
+	box-sizing: border-box;
+	margin: 10px 0px;
+}
+
+.fab {
+	border-radius: 50%;
+	padding: 15px 20px;
+}
+
+.button-block {
+	@include button;
+	background-color: $secondary-opaque;
+	color: white;
+	margin: 0;
+	width: 100%;
+	padding: 15px 0px;
+
+	&:hover {
+		background-color: $secondary;
+		color: $black-opaque;
+	}
+}

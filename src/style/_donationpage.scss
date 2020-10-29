@@ -1,0 +1,140 @@
+.donation-cover-image {
+	background-image: url(/donatePage.jpg);
+	@extend %layout-cover-image;
+	height: 70vh;
+	background-attachment: fixed;
+}
+
+.donation-image-container {
+	@extend %layout-image-container;
+	//background-color: rgba(black, 0.1);
+	align-items: center;
+	justify-content: center;
+	text-shadow: 0 0 10px rgba(black, 0.5);
+}
+
+.donations-parent-container {
+	background-color: white;
+	min-height: 60vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 20px 50px;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.donation-box {
+	background-image: url(/donatePage.jpg);
+	background-position: center center;
+	//background-attachment: fixed;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: rgba(white, 1);
+	padding: 10% 0;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+	@media only screen and (max-width: $medium-screen) {
+		height: 100vh;
+		padding: 0;
+	}
+}
+
+.donation-box-top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+	width: 100%;
+	text-align: center;
+
+	h3 {
+		font-size: 4rem;
+		font-weight: 600;
+		color: rgba(white, 0.9);
+
+		@media only screen and (max-width: $medium-screen) {
+			font-size: 2rem;
+		}
+	}
+
+	p {
+		font-size: 2rem;
+		font-weight: 300;
+		line-height: 1.2;
+
+		@media only screen and (max-width: $medium-screen) {
+			font-size: 1.2rem;
+		}
+	}
+}
+
+.donation-box-bottom {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	flex: 1;
+	width: 100%;
+	padding: 0% 2%;
+
+	@media only screen and (max-width: $medium-screen) {
+		flex-direction: column;
+		flex: 3;
+	}
+}
+
+.donation-card {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	//height: 100%;
+	padding: 0 5%;
+	text-align: center;
+
+	h3 {
+		@media only screen and (max-width: $medium-screen) {
+			font-size: 1.2rem;
+		}
+	}
+
+	a {
+		padding: 16px 70px;
+		color: #181818;
+		background-color: rgba($colormain, 1);
+		border-radius: 5px;
+		text-transform: uppercase;
+		font-weight: 600;
+		margin: 5% 0;
+		cursor: pointer;
+		transition: ease-in-out 0.3s;
+		text-shadow: none;
+
+		&:hover {
+			background-color: rgba(white, 1);
+			color: #181818;
+			text-decoration-line: none;
+		}
+	}
+}
+
+.border-around {
+	$color-border-around: rgba(whitesmoke, 0.5);
+	border-right: 2px solid $color-border-around;
+	border-left: 2px solid $color-border-around;
+
+	@media only screen and (max-width: $medium-screen) {
+		border-top: 2px solid $color-border-around;
+		border-bottom: 2px solid $color-border-around;
+		border-right: none;
+		border-left: none;
+	}
+}

@@ -1,0 +1,142 @@
+$cardBorderRadius: 8px;
+$cardContainerPadding: 50px;
+
+%cardflex {
+    display: flex;
+}
+
+%card-basic {
+    @extend %cardflex;
+    border: 1px solid rgba(0, 0, 0, .1);
+    flex: 1;
+    margin: 20px;
+    flex-direction: column;
+    min-width: 250px;
+    max-width: 400px;
+    background-color: white;
+
+    @media only screen and (max-width: $medium) {
+        max-width: 100%;
+        margin: 20px 10px;
+    }
+
+    @media only screen and (max-width: $small - 1) {
+        min-width: 100%;
+        margin: 20px 0px;
+    }
+}
+
+.card-basic {
+    @extend %card-basic;
+}
+
+.card-rounded {
+    @extend %card-basic;
+    border-radius: $cardBorderRadius;
+}
+
+.card-borderless {
+    @extend %card-basic;
+    border-color: transparent
+}
+
+.card-elevated {
+    @extend %card-basic;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-transparent {
+    @extend %card-basic;
+    background-color: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(10px);
+}
+
+.card-horizontal {
+    @extend %card-basic;
+    flex-direction: row;
+}
+
+.image-card {
+    @extend %card-basic;
+    color: white;
+    background-image: url('/background-cover.jpg');
+    min-height: 200px;
+    min-width: 200px;
+    background-size: cover;
+}
+
+
+.card-title {
+    font-size: 19px;
+    font-weight: 500;
+    color: rgba($color: black, $alpha: .9);
+    margin: 15px 0px 0px 0px;
+}
+
+.card-subtitle {
+    font-size: 16px;
+    font-weight: 450;
+    color: rgba($color: black, $alpha: .5);
+    margin: 5px 0px 10px 0;
+}
+
+.card-seperator {
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-top: 0px solid white;
+    margin: 20px -20px;
+    padding: 0;
+}
+
+.card-text {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0 10px 0;
+    color: rgba(0, 0, 0, .8);
+    line-height: 25px;
+}
+
+.text-shadow {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+.card-image {
+    object-fit: contain;
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+    //border-radius: $cardBorderRadius $cardBorderRadius 0px 0px;
+    width: 100%;
+    padding: 0;
+}
+
+.card-body {
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+%card-header-box {
+    border-bottom: 1px solid rgba($color: black, $alpha: .1);
+    background-color: rgba($color: gainsboro, $alpha: .3);
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 450;
+    border-radius: inherit;
+}
+
+.card-header {
+    @extend %card-header-box;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.card-footer {
+    @extend %card-header-box;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5)
+}

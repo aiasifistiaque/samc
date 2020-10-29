@@ -1,0 +1,76 @@
+//home who are we
+
+%samc-section-image-container-str {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	height: 100%;
+	width: 100%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.samc-home-section-cover-image {
+	background-repeat: no-repeat;
+	height: 95vh;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	flex-direction: column;
+	overflow: hidden;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.samc-section-image-container {
+	@extend %horizontal-padding;
+	@extend %samc-section-image-container-str;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.samc-section-image-container-light {
+	@extend %horizontal-padding;
+	@extend %samc-section-image-container-str;
+	background-color: rgba(white, 0.7);
+}
+
+.samc-home-section-heading {
+	align-self: center;
+	font-size: 4rem;
+	font-weight: 600;
+	color: rgba(black, 0.7);
+	padding: 20px 100px 20px 100px;
+	text-shadow: 0 0 10px rgba(black, 0.2);
+	border-bottom: 2px solid rgba(black, 0.7);
+
+	@media only screen and (max-width: $medium-screen) {
+		font-size: 3rem;
+	}
+
+	@media only screen and (max-width: $small-screen) {
+		font-size: 2rem;
+	}
+}
+
+.samc-home-section-contents {
+	font-size: 1.6rem;
+	font-weight: 230;
+	color: rgba(0, 0, 0, 1);
+	text-shadow: $text-shadow-white-light;
+	line-height: 1.4;
+	font-weight: 300;
+	padding: 0.5rem 3rem;
+	text-align: center;
+
+	@media only screen and (max-width: $medium-screen) {
+		font-size: 18px;
+	}
+}
+
+.learn-more-button {
+	color: whitesmoke;
+	border: 2px solid whitesmoke;
+	width: 300px;
+	margin-top: 25px;
+}

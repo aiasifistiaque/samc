@@ -1,0 +1,89 @@
+$carousal-height: 60vh;
+
+.carousel {
+    background-color: red;
+    height: $carousal-height;
+    width: 100%;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    transition: 1s ease-in;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.cr-button {
+    padding: ($carousal-height - 2.5vh)/2 8px;
+    background-color: transparent;
+    color: white;
+    text-shadow: 0px 0px 2px black, 0 0 25px black, 0 0 25px black;
+    border: none;
+    margin: 0;
+    font-size: 14px;
+
+
+    &:hover {
+        background-color: rgba($color: black, $alpha: 0.7);
+    }
+}
+
+.cr-btn-left {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.cr-btn-right {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+%car-text {
+    color: white;
+    text-shadow: 5px 5px 5px black,
+        0 0 20px black,
+        0 0 20px black;
+    text-align: center;
+    font-weight: 400;
+}
+
+.car-caption {
+    @extend %car-text;
+    font-size: 40px;
+    padding: 30px 0px;
+    justify-self: center;
+    align-self: center;
+}
+
+.car-sub-title {
+    @extend %car-text;
+    font-size: 25px;
+    font-weight: 350;
+    margin: 20px;
+
+}
+
+.car-content {
+    @extend %car-text;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+
+}
+
+.carousel-container {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 450;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+
+}

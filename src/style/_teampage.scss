@@ -1,0 +1,106 @@
+.samc-teampage-cover-image {
+	background-repeat: no-repeat;
+	height: 60vh;
+	width: 100%;
+	background-position: center center;
+	background-size: cover;
+	color: white;
+	flex-direction: column;
+	background-attachment: fixed;
+
+	@media only screen and(max-width:$small-screen) {
+		height: 40vh;
+	}
+
+	@media only screen and(max-width:$medium-screen) {
+		height: 50vh;
+	}
+
+	@media only screen and(max-width:$large-screen) {
+		height: 50vh;
+	}
+}
+
+.top-border-radius {
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.bottom-border-radius {
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.samc-content-box {
+	width: 86%;
+	margin-left: 7%;
+	box-sizing: border-box;
+
+	//box-shadow: 0 0 10px rgba(black, 0.5);
+	@media only screen and(max-width:$medium-screen) {
+		width: 94%;
+		margin-left: 3%;
+	}
+
+	@media only screen and(max-width:$small-screen) {
+		width: 100%;
+		margin-left: 3%;
+		margin-left: 0;
+	}
+}
+
+.team-parent-container {
+	background-color: whitesmoke;
+	min-height: 100px;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding: 0 50px;
+	color: black;
+	justify-content: center;
+}
+
+.meet-team-button {
+	font-size: 18px;
+	font-weight: 500;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	justify-content: center;
+	vertical-align: center;
+	text-justify: center;
+	justify-self: center;
+	align-items: center;
+	overflow: hidden;
+	text-align: center;
+	text-transform: capitalize;
+	padding: 18px 50px;
+	background-color: rgba($color: #07cca4, $alpha: 1);
+	color: rgba($color: white, $alpha: 1);
+	transition: 0.3s;
+	margin: 10px 0px;
+	align-self: center;
+	border: 1px solid #07cca4;
+	cursor: pointer;
+	border-radius: 4px;
+
+	&:hover {
+		border: 1px solid #07cca4;
+		background-color: rgba($color: white, $alpha: 1);
+		color: rgba($color: #07cca4, $alpha: 1);
+	}
+}
+
+.footer-bottom {
+	padding: 1% 10%;
+	padding-bottom: 0;
+	//text-align: center;
+
+	@media only screen and (max-width: $medium-screen) {
+		padding: 1% 4%;
+		padding-bottom: 0;
+	}
+}

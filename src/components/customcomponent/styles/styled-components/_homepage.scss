@@ -1,0 +1,48 @@
+.home-title {
+    font-size: 60px;
+    color: white;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    opacity: .9;
+
+    @media only screen and (max-width: $medium) {
+        font-size: 30px;
+    }
+}
+
+.home-brand {
+    font-size: 60px;
+    color: white;
+    background-color: $secondary;
+    opacity: .9;
+    padding: 10px 20px;
+    border-radius: 5%;
+    margin-top: 20px;
+    margin: 0;
+}
+
+.home-subtitle {
+    font-size: 20px;
+    color: white;
+    padding: 0px 20px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.home-address {
+    font-size: 20px;
+    color: $primary-light;
+    padding: 0px 20px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.home-image-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/background-cover.jpg');
+    background-size: cover;
+    opacity: 1;
+}

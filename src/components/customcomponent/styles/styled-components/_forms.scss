@@ -1,0 +1,135 @@
+$min-input-width: 330px;
+$input-flex: 3;
+
+.c-container-form {
+	width: 60%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 15px 30px;
+	margin: 10px 0;
+	flex-direction: column;
+	border: 3px solid whitesmoke;
+	border-radius: 4px;
+	box-sizing: border-box;
+	background-color: white;
+}
+
+.c-form-container {
+	display: flex;
+	padding: 10px 0px;
+	box-sizing: border-box;
+	width: 100%;
+	flex-direction: column;
+}
+
+.c-form {
+	width: inherit;
+	font-size: 18px;
+	color: rgba($color: black, $alpha: 0.9);
+	box-sizing: border-box;
+}
+
+.c-form-label-vertical {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.c-form-label-inline {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	@media only screen and (max-width: $medium) {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+}
+
+.c-input {
+	width: inherit;
+	padding: 10px;
+	border: 1px solid rgba($color: black, $alpha: 0.2);
+	border-radius: 4px;
+	margin: 0;
+	font-size: 16px;
+	color: rgba($color: black, $alpha: 0.9);
+	font-weight: 200;
+	box-sizing: border-box;
+	flex: $input-flex;
+	width: inherit;
+
+	&:focus {
+		outline-color: rgba($color: black, $alpha: 0.5);
+	}
+}
+
+.c-form-label {
+	font-size: 14px;
+	font-weight: 550;
+	color: rgba($color: black, $alpha: 0.7);
+	flex: 1;
+}
+
+.c-inline-label {
+	margin: 0;
+
+	@media only screen and (max-width: $medium) {
+		margin: 0px 3px 8px 0;
+	}
+}
+
+.c-vertical-label {
+	margin: 0px 3px 8px 0;
+}
+
+.c-input-warning {
+	color: rgba($color: black, $alpha: 0.4);
+	font-size: 13px;
+	margin: 5px 0 0 1px;
+	font-weight: 450;
+	flex: $input-flex;
+}
+
+.c-warning-spacing {
+	display: inherit;
+	flex: 1;
+
+	@media only screen and (max-width: $medium) {
+		flex: 0;
+	}
+}
+
+.no-border {
+	border: none;
+}
+
+.border {
+	border: 1px solid rgba($color: black, $alpha: 0.7);
+}
+
+.border-thick {
+	border: 3px solid whitesmoke;
+}
+
+.width-block {
+	width: 90%;
+}
+
+.width-small {
+	width: 30%;
+	min-width: 300px;
+}
+
+.width-regular {
+	width: 50%;
+	min-width: 300px;
+}
+
+.c-rounded {
+	border-radius: 25px;
+}

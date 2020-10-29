@@ -1,0 +1,32 @@
+.sidebar {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: $primary;
+    color: white;
+    padding: 0 30px;
+    width: 25vw;
+    height: 100vh;
+
+    @media only screen and (max-width: $medium) {}
+}
+
+.sidebar-brand {
+    color: $primary;
+    text-decoration: none;
+    padding: 20px 10px;
+    font-size: 25px;
+    opacity: .5;
+    border-radius: 4px;
+    background-color: white;
+    text-align: center;
+
+}
+
+.sidebar-item {
+    color: rgba(245, 245, 245, .7);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 0;
+    border-bottom: 2px solid rgba(245, 245, 245, .06);
+}

@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../next/samcprototypeone"
+		},
+		{
+			"path": "../../samcbackend"
+		}
+	],
+	"settings": {}
+}

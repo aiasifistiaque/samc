@@ -1,0 +1,76 @@
+.c-history {
+	background: whitesmoke;
+	background-image: url(/historyPage.jpeg);
+	background-repeat: no-repeat;
+	height: 40vh;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: flex-end;
+	align-items: flex-end;
+	justify-content: center;
+	color: white;
+	flex-direction: column;
+}
+
+.c-donation {
+	background: whitesmoke;
+	//background-image: url(/donationPage.jpg);
+	background-repeat: no-repeat;
+	height: 40vh;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: flex-end;
+	align-items: flex-end;
+	justify-content: center;
+	color: white;
+	flex-direction: column;
+}
+
+.c-header {
+	font-size: 70px;
+	font-weight: 600;
+
+	@media only screen and (max-width: 1200px) {
+		font-size: 50px;
+	}
+
+	@media only screen and (max-width: 900px) {
+		font-size: 40px;
+	}
+}
+
+.c-sub-header {
+	font-size: 60px;
+	font-weight: 400;
+
+	@media only screen and (max-width: 1200px) {
+		font-size: 40px;
+	}
+
+	@media only screen and (max-width: 900px) {
+		font-size: 30px;
+	}
+}
+
+.right-sidebar-item {
+	color: rgba(0, 0, 0, 0.7);
+	font-size: inherit;
+	color: 'white';
+	width: 100%;
+	padding: 10px 15px;
+	margin: 0;
+
+	&:hover {
+		color: white;
+		text-decoration-line: none;
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+}
+
+.c-blur {
+	backdrop-filter: blur(10px);
+}

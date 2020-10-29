@@ -1,0 +1,64 @@
+.button-big {
+    @include button;
+    background-color: $secondary;
+    color: white;
+    padding: 20px 100px;
+
+    &:hover {
+        background-color: $secondary;
+        color: $black-opaque;
+    }
+}
+
+
+.button-white {
+    @include button;
+    background-color: color;
+    color: $primary;
+    padding: 15px 40px;
+
+    &:hover {
+        background-color: $secondary;
+        color: white;
+    }
+}
+
+.button-secondary-big {
+    @include button;
+    background-color: rgba(0, 255, 0, .95);
+    color: $black-opaque;
+    margin: 10px 0px;
+    padding: 20px 100px;
+    opacity: .8;
+
+    &:hover {
+        opacity: 1;
+        background-color: $secondary;
+        color: white;
+    }
+}
+
+.button-social-media {
+    height: 40px;
+    width: 40px;
+    font-size: 15px;
+    border: 2px solid $secondary;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: .8;
+    color: $secondary;
+    margin: 0px 10px;
+
+    &:hover {
+        background-color: $secondary;
+        color: white;
+    }
+}
+
+.horizontal-button-container {
+    display: flex;
+    flex: 1;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}

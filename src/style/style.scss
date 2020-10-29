@@ -1,0 +1,30 @@
+@import './constants';
+@import './home';
+@import './sections';
+@import './bgblur';
+@import './newsletter';
+@import './section';
+@import './misc';
+@import './constants';
+@import './header';
+@import './homewhoarewe';
+@import './teampage';
+@import './historypage';
+@import './donationpage';
+@import './layouts';
+@import './projects';
+@import './findus';
+@import './custom';
+
+body {
+	min-height: 100vh;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+		Helvetica Neue, Ubuntu, sans-serif;
+	line-height: 1.3;
+}
+
+p {
+	color: 'rgba(0,0,0,.7)';
+	line-height: 1.8;
+	margin: 0;
+}

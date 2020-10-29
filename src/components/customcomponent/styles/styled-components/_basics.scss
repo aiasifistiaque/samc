@@ -1,0 +1,27 @@
+.left {
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.right {
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.center {
+	justify-content: center;
+	align-items: center;
+}
+
+.fluid {
+	align-self: center;
+	width: 90%;
+}
+
+.font-bold {
+	font-weight: $fontWeightBold;
+}
+
+.font-normal {
+	font-weight: $fontWeightNormal;
+}

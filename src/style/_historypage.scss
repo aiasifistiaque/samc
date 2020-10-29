@@ -1,0 +1,147 @@
+.samc-history-cover-image {
+	background-image: url(/historyPage.jpeg);
+	@extend %layout-cover-image;
+	height: 60vh;
+}
+
+.samc-history-image-container {
+	@extend %layout-image-container;
+	@extend %vertical-padding;
+	text-shadow: 0 0 10px rgba(black, 0.5);
+	justify-content: space-around;
+	background-color: rgba(black, 0.4);
+}
+
+.samc-history-content-container {
+	padding: 4% 10%;
+	flex: 3;
+
+	@media only screen and(max-width:$medium) {
+		flex: 1;
+		padding: 4% 5%;
+	}
+
+	@media only screen and(max-width:$small) {
+		flex: 1;
+		padding: 4% 2%;
+	}
+}
+
+.samc-history-heading {
+	font-size: 5vw;
+	margin: 0;
+}
+
+.samc-history-sub-heading {
+	font-size: 23px;
+	font-weight: 300;
+	margin: 0;
+}
+
+.samc-history-content {
+	padding: 2% 0%;
+
+	@media only screen and (max-width: $medium-screen) {
+		padding: 2% 5%;
+	}
+
+	p {
+		font-size: $content-font-size;
+		color: rgba(black, 0.8);
+		text-align: justify;
+		line-height: 1.6;
+		font-weight: 350;
+		font-size: 1.1rem;
+	}
+
+	h3 {
+		font-size: 1.4rem;
+		font-weight: 400;
+		color: rgba(black, 0.4);
+		margin: 4rem 0 1rem 0;
+	}
+}
+
+.samc-history-sidebar {
+	@extend .container-vertical;
+	align-self: flex-start;
+	position: sticky;
+	top: 12vh;
+	padding: 4% 2%;
+	border-radius: 0.9rem;
+	margin: 4% 2%;
+	min-width: 190px;
+	flex: 1;
+
+	p {
+		font-size: 1.2rem;
+		font-weight: 600;
+		padding: 0.6rem 1rem;
+		color: rgba(black, 0.6);
+		border-bottom: 2px solid rgba(black, 0.1);
+	}
+
+	a {
+		cursor: pointer;
+		padding: 0.8rem 1rem;
+		border-radius: none;
+		color: rgba(black, 0.5);
+		font-weight: 600;
+		font-size: 1rem;
+		//border-bottom: 1px solid rgba(black, 0.1);
+
+		&:hover {
+			background-color: rgba(black, 0.05);
+			text-decoration-line: none;
+			border-radius: 0.4rem;
+			border: none;
+			color: rgba(black, 0.8);
+			//padding: 0.8rem 1.2rem;
+		}
+	}
+}
+
+.samc-history-sidebar-small {
+	@extend .container-vertical;
+	align-self: flex-start;
+	position: fixed;
+	width: 90%;
+	margin-left: 5%;
+	padding: 1% 2%;
+	top: 10vh;
+	left: 5%;
+	background-color: whitesmoke;
+	border-radius: 0.9rem;
+	border: 1px solid rgba(black, 0.1);
+	margin: 2% 0;
+	min-width: 190px;
+	z-index: 9;
+
+	p {
+		font-size: 1.2rem;
+		font-weight: 600;
+		padding: 0.6rem 1rem;
+		color: rgba(black, 0.6);
+		border-bottom: 2px solid rgba(black, 0.1);
+	}
+
+	a {
+		cursor: pointer;
+		padding: 0.6rem 1rem;
+		border-radius: 0.4rem;
+		border-bottom: 1px solid rgba(black, 0.1);
+		margin-top: 0.8rem;
+		color: rgba(black, 0.5);
+
+		&:hover {
+			background-color: rgba(black, 0.1);
+			text-decoration-line: underline;
+			color: rgba(black, 0.5);
+		}
+
+		&:active {
+			background-color: rgba(black, 0.1);
+			text-decoration-line: underline;
+		}
+	}
+}

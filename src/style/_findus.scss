@@ -1,0 +1,31 @@
+.find-us {
+	height: 30vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 3rem;
+
+	p {
+		font-size: 1.8rem;
+		font-weight: 400;
+		margin: 0;
+		margin-right: 8px;
+		color: rgba(black, 0.6);
+	}
+
+	img {
+		$icon-dimension: 3rem;
+		height: $icon-dimension;
+		width: $icon-dimension;
+		margin: 0 5px;
+		align-self: center;
+		cursor: pointer;
+		padding: 5px;
+		border-radius: 5px;
+
+		&:hover {
+			background-color: rgba(black, 0.08);
+		}
+	}
+}

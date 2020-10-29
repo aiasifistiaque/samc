@@ -1,0 +1,41 @@
+//opacity
+$opaque-normal: 0.7;
+$opaque-dark: 0.6;
+$opaque-light: 0.5;
+$opaque: 0.7;
+
+//margin-padding gap
+$gapSmall: 10px;
+$gapMedium: 15px;
+$gapLarge: 20px;
+$gapXLarge: 25px;
+
+//text
+$textExtraSmall: 13px;
+$textSmall: 15px;
+$textMedium: 18px;
+$textLarge: 25px;
+$TextXLarge: 30px;
+$TextXXLarge: 35px;
+
+//font-weithg
+$fontWeightBold: 480;
+$fontWeightNormal: 330;
+
+//colors
+$primary: rgb(0, 96, 121);
+$primary-light: lightskyblue;
+$primary-dark: midnightblue;
+$secondary: limegreen;
+$primary-dark-opaque: rgba(25, 25, 121, $opaque);
+$primary-opaque: rgba(0, 96, 121, $opaque);
+$secondary-opaque: rgba(0, 255, 0, $opaque);
+$white-opaque: rgba(255, 255, 255, $opaque);
+$black-opaque: rgba(0, 0, 0, $opaque);
+$card-border: rgba(0, 0, 0, 0.3);
+
+//screen sizes
+$small: 600px;
+$medium: 900px;
+$large: 992x;
+$extra-large: 1200px;

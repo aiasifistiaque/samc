@@ -1,0 +1,37 @@
+%clickable-basic {
+	margin: 5px;
+	color: inherit;
+	padding: 10px;
+
+	&:hover {
+		padding: 10px 20%;
+		border-radius: 5px;
+		background-color: rgba($color: black, $alpha: 0.7);
+		color: white;
+		cursor: pointer;
+	}
+}
+
+.clickable {
+	@extend %clickable-basic;
+}
+
+.clickable-light {
+	@extend %clickable-basic;
+	color: rgba($color: black, $alpha: 0.7);
+
+	&:hover {
+		background-color: rgba($color: black, $alpha: 0.7);
+		color: white;
+	}
+}
+
+.clickable-dark {
+	@extend %clickable-basic;
+	color: rgba($color: white, $alpha: 0.7);
+
+	&:hover {
+		background-color: rgba($color: white, $alpha: 0.7);
+		color: rgba($color: black, $alpha: 0.7);
+	}
+}

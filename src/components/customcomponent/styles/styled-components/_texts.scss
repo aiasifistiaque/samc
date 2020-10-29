@@ -1,0 +1,67 @@
+.h-1 {
+	font-size: 45px;
+	margin: 5px;
+
+	@media only screen and (max-width: $medium) {
+		font-size: 30px;
+	}
+}
+
+.h-2 {
+	font-size: 30px;
+	margin: 5px;
+
+	@media only screen and (max-width: $medium) {
+		font-size: 20px;
+	}
+}
+
+.content {
+	margin: 5px;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.text {
+	margin: 5px;
+	font-weight: $fontWeightNormal;
+}
+
+.text-extra-small {
+	font-size: $textExtraSmall;
+}
+
+.text-small {
+	font-size: $textSmall;
+}
+
+.text-medium {
+	font-size: $textMedium;
+}
+
+.text-large {
+	font-size: $textLarge;
+}
+
+.text-xlarge {
+	font-size: $TextXLarge;
+}
+
+.text-xxlarge {
+	font-size: $TextXXLarge;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+.text-left {
+	text-align: start;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}

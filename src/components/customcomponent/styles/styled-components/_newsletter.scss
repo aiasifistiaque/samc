@@ -1,0 +1,42 @@
+.newsletter-parent-container {
+	background-color: rgba(25, 25, 125, 0.88);
+	min-height: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px 50px;
+	opacity: 0.85;
+	color: rgba(255, 255, 255, 0.7);
+
+	@media only screen and (max-width: $medium) {
+		flex-direction: column;
+	}
+}
+
+.newsletter-contain {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	padding: 50px 30px;
+	opacity: 0.7;
+}
+
+.newsletter-item {
+	text-align: center;
+	line-height: 33px;
+	font-size: 25px;
+}
+
+.donations-parent-container {
+	background-color: white;
+	min-height: 60vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 20px 50px;
+	opacity: 0.6;
+	color: rgba(0, 0, 0, 0.7);
+}

@@ -1,0 +1,227 @@
+//styling for home
+
+$maincolor: rgb(7, 204, 164);
+$text-shadow-light: 0 0 5px rgba(0, 0, 0, 0.5);
+$text-shadow-white-light: 0 0 5px rgba(white, 0.5);
+
+.samc-home-cover-image {
+	@extend %layout-cover-image;
+	height: 100vh;
+	background-attachment: fixed;
+	z-index: 10;
+}
+
+.samc-image-container {
+	@extend %layout-image-container;
+	justify-content: flex-end;
+	background-color: rgba(0, 0, 0, 0.3);
+	z-index: 10;
+}
+
+.samc-main-heading-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: 75%;
+	padding: 50px 0;
+	text-shadow: $text-shadow-light;
+}
+
+.samc-main-heading {
+	color: whitesmoke;
+	text-shadow: $text-shadow-light;
+	font-weight: 600;
+	font-size: 60px;
+	text-align: center;
+	padding-bottom: 5px;
+
+	@media only screen and (max-width: $x-large-screen) {
+		font-size: 50px;
+	}
+
+	@media only screen and (max-width: $large-screen) {
+		font-size: 35px;
+	}
+}
+
+.samc-sub-heading {
+	color: whitesmoke;
+	text-shadow: $text-shadow-light;
+	font-size: 23px;
+	font-weight: 200;
+	margin-bottom: 10px;
+
+	@media only screen and (max-width: $large-screen) {
+		font-size: 20px;
+	}
+}
+
+.home-donate-button-in-header {
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	display: inline-block;
+	justify-content: center;
+	text-justify: center;
+	justify-self: center;
+	align-items: center;
+	overflow: hidden;
+	text-align: center;
+	padding: 16px 70px;
+	background-color: rgba($maincolor, 1);
+	color: whitesmoke;
+	text-decoration-line: none;
+	border: 3px solid $maincolor;
+	transition: 0.3s;
+	margin: 10px 0px 5px 0;
+	cursor: pointer;
+	text-shadow: none;
+	border-radius: 4px;
+
+	&:hover {
+		background-color: white;
+		backdrop-filter: blur(10px);
+		border: 3px solid white;
+		color: rgba(0, 0, 0, 0.7);
+		text-decoration-line: none;
+	}
+}
+
+.c-image-text-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+	//backdrop-filter: blur(2px);
+}
+
+.image-contents {
+	color: white;
+	text-align: center;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-header {
+	color: white;
+	text-align: center;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	font-weight: 600;
+	font-size: 80px;
+	margin: 0;
+	padding: 0;
+	z-index: 10;
+
+	@media only screen and (max-width: 1200px) {
+		font-size: 60px;
+	}
+
+	@media only screen and (max-width: 900px) {
+		font-size: 35px;
+	}
+}
+
+.c-image-text-container-light {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-end;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+	backdrop-filter: blur(5px);
+}
+
+.c-image-text-light {
+	color: rgba(black, 0.5);
+	text-align: justify;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	font-size: 14;
+	font-weight: 400;
+}
+
+.c-header {
+	font-size: 40px;
+	font-weight: 600;
+
+	@media only screen and (max-width: 1200px) {
+		font-size: 30px;
+	}
+
+	@media only screen and (max-width: 900px) {
+		font-size: 25px;
+	}
+}
+
+.c-sub-header {
+	font-size: 60px;
+	font-weight: 400;
+
+	@media only screen and (max-width: 1200px) {
+		font-size: 35px;
+	}
+
+	@media only screen and (max-width: 900px) {
+		font-size: 30px;
+	}
+}
+
+.who-are-we {
+	width: 95%;
+	margin-top: 400px;
+	//margin-bottom: -80px;
+	padding: 40px 200px;
+	border-radius: 10px;
+	background-color: rgba(teal, 0.1);
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(10px);
+	box-sizing: border-box;
+
+	@media only screen and (max-width: 900px) {
+		padding: 40px 20px;
+	}
+}
+
+.learn-more {
+	padding: 16px 70px;
+	border: 3px solid $maincolor;
+	background-color: transparent;
+	color: $color-new-primary;
+	font-size: 1rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	display: inline-block;
+	border-radius: 3px;
+	//text-shadow: 0 0 5px rgba(black, 0.2);
+	cursor: pointer;
+	transition: ease-in-out 0.2s;
+	//backdrop-filter: blur(2px);
+
+	@media only screen and (max-width: $medium-screen) {
+		padding: 12px 50px;
+	}
+
+	a {
+		color: red;
+	}
+
+	&:hover {
+		border-color: $maincolor;
+		background-color: $maincolor;
+		color: $color-new-primary;
+		text-shadow: none;
+		text-decoration-line: none;
+		color: white;
+	}
+}
+
+.menuIcon {
+	&:hover {
+		//background-color: rgba(black, 0.2);
+	}
+}
