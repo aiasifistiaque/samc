@@ -21,4 +21,4 @@ export const css = {
 };
 
 export const mapboxApiKey =
-	'pk.eyJ1IjoiYXNpZmlzdGlhcXVlYWkiLCJhIjoiY2tnNGF0Njl0MGl0bjJ4bzVsNWUydGNmNSJ9.2HoGDZatVFzeJQ00IBf3TA';
+	'';
