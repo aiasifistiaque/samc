@@ -1,6 +1,6 @@
 export const name = 'SAMC';
 export const stripeApiKey =
-	'pk_test_51HF2adLSnE3O886atSWbDMv9DAvrWYMmbJ6xiPa2CwSjxPX2Pt9vgVqgXfaJvxH1LNXCag6d2hTBMXSVhqQqAaFm00MGwq25gN';
+	'';
 
 export const fullName = 'Suraiya Ataur Medical Center';
 
